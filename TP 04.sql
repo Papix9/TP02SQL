@@ -44,7 +44,7 @@ WHERE F.NOM = 'Dubois & Fils';
 -- h. Calculez la moyenne des prix des articles de la société « Dubois & Fils »
 SELECT AVG(A.PRIX) AS moyenne_prix
 FROM article A
-JOIN FOURNISSEUR F ON A.ID_FOU = F.ID
+JOIN fournisseur F ON A.ID_FOU = F.ID
 WHERE F.NOM = 'Dubois & Fils';
 
 -- i. Calculez la moyenne des prix des articles de chaque fournisseur
